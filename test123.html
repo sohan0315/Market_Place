@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+       <meta charset="utf-8">
+       <title>My first jQuery Mobile code</title>
+       <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+       <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+       <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+	   <script>
+	    var responses = [];
+		function myFunction() {
+			responses.push("YES");
+		}
+		function myNOFunction() {
+			responses.push("NO");
+		}
+		function showresponse() {
+			document.getElementById("page10").innerHTML = responses;
+		}
+		</script>
+ </head>
+ <body>
+    <div data-role="page" id="page1" data-theme="a">
+         <div data-role="header">
+               <h1>COFFEE VOTING APP</h1>
+         </div>
+         <div data-role="content">
+		 <h1>Do you play football?</h1>
+		<button onclick="myFunction()" type="radio" name="radio-choice-0" id="radio-choice-0a">YES</button>
+		<button onclick="myNOFunction()" type="radio" name="radio-choice-0" id="radio-choice-0b">NO</button>
+		<a href="#page2">Next Question</a>
+         </div>
+        <div data-role="footer">
+         <h4>&copy; KOPI LUWAK COFFEE </h4>
+        </div>
+    </div>
+	<div data-role="page" id="page2" data-theme="a">
+         <div data-role="header">
+               <h1>COFFEE VOTING APP</h1>
+         </div>
+         <div data-role="content">
+		 <h1>Can you bowl?</h1>
+		<button onclick="myFunction()" type="radio" name="radio-choice-0" id="radio-choice-0a">YES</button>
+		<button onclick="myNOFunction()" type="radio" name="radio-choice-0" id="radio-choice-0b">NO</button>
+		<a href="#page3">Next Question</a>
+         </div>
+        <div data-role="footer">
+         <h4>&copy; KOPI LUWAK COFFEE </h4>
+        </div>
+    </div>
+	<div data-role="page" id="page3" data-theme="a">
+         <div data-role="header">
+               <h1>COFFEE VOTING APP</h1>
+         </div>
+         <div data-role="content">
+		 <h1>Did baseball influence your life?</h1>
+		<button onclick="myFunction()" type="radio" name="radio-choice-0" id="radio-choice-0a">YES</button>
+		<button onclick="myNOFunction()" type="radio" name="radio-choice-0" id="radio-choice-0b">NO</button>
+		<a href="#page4">Next Question</a>
+         </div>
+        <div data-role="footer">
+         <h4>&copy; KOPI LUWAK COFFEE </h4>
+        </div>
+    </div>
+	<div data-role="page" id="page4" data-theme="a">
+         <div data-role="header">
+               <h1>COFFEE VOTING APP</h1>
+         </div>
+         <div data-role="content">
+		 <h1>Were you on the basketball team?</h1>
+		<button onclick="myFunction()" type="radio" name="radio-choice-0" id="radio-choice-0a">YES</button>
+		<button onclick="myNOFunction()" type="radio" name="radio-choice-0" id="radio-choice-0b">NO</button>
+		<a href="#page5">Next Question</a>
+         </div>
+        <div data-role="footer">
+         <h4>&copy; KOPI LUWAK COFFEE </h4>
+        </div>
+    </div>
+	<div data-role="page" id="page5" data-theme="a">
+         <div data-role="header">
+               <h1>COFFEE VOTING APP</h1>
+         </div>
+         <div data-role="content">
+		 <h1>Did you learn how to play golf?</h1>
+		<button onclick="myFunction()" type="radio" name="radio-choice-0" id="radio-choice-0a">YES</button>
+		<button onclick="myNOFunction()" type="radio" name="radio-choice-0" id="radio-choice-0b">NO</button>
+		<a href="#page6">Next Question</a>
+         </div>
+        <div data-role="footer">
+         <h4>&copy; KOPI LUWAK COFFEE </h4>
+        </div>
+    </div>
+	<div data-role="page" id="page6" data-theme="a">
+         <div data-role="header">
+               <h1>COFFEE VOTING APP</h1>
+         </div>
+         <div data-role="content">
+		 <h1>Will you play tennis in the upcoming tournament?</h1>
+		<button onclick="myFunction()" type="radio" name="radio-choice-0" id="radio-choice-0a">YES</button>
+		<button onclick="myNOFunction()" type="radio" name="radio-choice-0" id="radio-choice-0b">NO</button>
+		<a href="#page7">Next Question</a>
+         </div>
+        <div data-role="footer">
+         <h4>&copy; KOPI LUWAK COFFEE </h4>
+        </div>
+    </div>
+	<div data-role="page" id="page7" data-theme="a">
+         <div data-role="header">
+               <h1>COFFEE VOTING APP</h1>
+         </div>
+         <div data-role="content">
+		 <h1>Do you collect sports cards?</h1>
+		<button onclick="myFunction()" type="radio" name="radio-choice-0" id="radio-choice-0a">YES</button>
+		<button onclick="myNOFunction()" type="radio" name="radio-choice-0" id="radio-choice-0b">NO</button>
+		<a href="#page8">Next Question</a>
+         </div>
+        <div data-role="footer">
+         <h4>&copy; KOPI LUWAK COFFEE </h4>
+        </div>
+    </div>
+	<div data-role="page" id="page8" data-theme="a">
+         <div data-role="header">
+               <h1>COFFEE VOTING APP</h1>
+         </div>
+         <div data-role="content">
+		 <h1>Can you do the four main swimming strokes?</h1>
+		<button onclick="myFunction()" type="radio" name="radio-choice-0" id="radio-choice-0a">YES</button>
+		<button onclick="myNOFunction()" type="radio" name="radio-choice-0" id="radio-choice-0b">NO</button>
+		<a href="#page9">Next Question</a>
+         </div>
+        <div data-role="footer">
+         <h4>&copy; KOPI LUWAK COFFEE </h4>
+        </div>
+    </div>
+	<div data-role="page" id="page9" data-theme="a">
+         <div data-role="header">
+               <h1>COFFEE VOTING APP</h1>
+         </div>
+         <div data-role="content">
+		 <h1>Are you training to be a gymnast?</h1>
+		<button onclick="myFunction()" type="radio" name="radio-choice-0" id="radio-choice-0a">YES</button>
+		<button onclick="myNOFunction()" type="radio" name="radio-choice-0" id="radio-choice-0b">NO</button>
+		<a href="#page10">Next Question</a>
+         </div>
+        <div data-role="footer">
+         <h4>&copy; KOPI LUWAK COFFEE </h4>
+        </div>
+    </div>
+	<div data-role="page" id="page10" data-theme="a">
+         <div data-role="header">
+               <h1>COFFEE VOTING APP</h1>
+         </div>
+         <div data-role="content">
+		 <h1>Have you ever been a golf caddie?</h1>
+		<button onclick="myFunction()" type="radio" name="radio-choice-0" id="radio-choice-0a">YES</button>
+		<button onclick="myNOFunction()" type="radio" name="radio-choice-0" id="radio-choice-0b">NO</button>
+		<button onclick="showresponse()">SUBMIT</button>
+         </div>
+        <div data-role="footer">
+         <h4>&copy; KOPI LUWAK COFFEE </h4>
+        </div>
+    </div>
+
+	
+
+    </body>
+    </html>
