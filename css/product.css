@@ -1,0 +1,176 @@
+img {
+    /* border: 1px solid #ddd; */
+    border-radius: 4px;
+    padding: 5px;
+    width: 160px;
+  }
+
+  img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+
+  .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* background-color: #f2f0eb; */
+  padding: 10px;
+  }
+  .grid-item {
+  /* background-color: #f2f0eb; */
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  }
+  
+  .subnav {
+  float: left;
+  overflow: hidden;
+  }
+
+  /* Subnav button */
+  .subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  }
+
+  /* Add a red background color to navigation links on hover */
+  .navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: #4caf50;
+  }
+
+  /* Style the subnav content - positioned absolute */
+  .subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #4caf50;
+  width: 100%;
+  z-index: 1;
+  }
+
+  /* Style the subnav links */
+  .subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+  }
+
+  /* Add a grey background color on hover */
+  .subnav-content a:hover {
+  background-color: #eee;
+  color: white;
+  }
+
+  /* When you move the mouse over the subnav container, open the subnav content */
+  .subnav:hover .subnav-content {
+  display: block;
+  }
+
+  .item1 { grid-area: header; }
+  .item2 { grid-area: menu; }
+  .item3 { grid-area: main; }
+  .item4 { grid-area: right; }
+  .item5 { grid-area: footer; }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu main main main right right'
+      'menu footer footer footer footer footer';
+    grid-gap: 10px;
+    /* background-color: #4caf50; */
+    padding: 10px;
+  }
+
+  .grid-container > div {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  div.background {
+    background-color: #4caf50;
+    opacity: 0.3;
+    border: 2px solid black;
+  }
+
+  div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+  }
+
+  div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  .List {
+list-style-type: none;
+margin: 0;
+padding: 0;
+width: 25%;
+background-color: #f1f1f1;
+position: fixed;
+height: 100%;
+overflow: auto;
+}
+
+.ListElement a {
+display: block;
+color: #000;
+padding: 8px 16px;
+text-decoration: none;
+}
+
+.ListElement a.active {
+background-color: #4CAF50;
+color: white;
+}
+
+.ListElement a:hover:not(.active) {
+background-color: #555;
+color: white;
+}
+
+
+.SIDEBARMENU {
+margin: 300px auto;
+text-align: center;
+color: white;
+font-size: -1em;
+transition: 0.5s;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.SIDEBARMENU:hover {
+text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+0 3px 0 #ccc, 0 4px 0 #ccc,
+0 5px 0 #ccc, 0 6px 0 #ccc,
+0 7px 0 #ccc, 0 8px 0 #ccc,
+0 9px 0 #ccc, 0 10px 0 #ccc,
+0 11px 0 #ccc, 0 12px 0 #ccc,
+0 20px 30px rgba(0, 0, 0, 0.5);
+}
+.zoom {
+padding: 50px;
+transition: transform .2s; /* Animation */
+width: 200px;
+height: 200px;
+margin: 0 auto;
+}
+
+.zoom:hover {
+transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}

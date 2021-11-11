@@ -1,0 +1,94 @@
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+}
+
+.dropdown-item {
+  background-color: white;
+}
+
+.dropdown-item:hover {
+  background-color: #4caf50;
+}
+
+
+h1
+{
+  text-align: right;
+  padding-top:30;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+h2
+{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+h4
+{
+  text-align: right;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.col-md-12
+{
+  padding-top:10;
+  border-radius:30;
+}
+p
+{
+  text-align: justify;
+  padding: 10;
+  font-family: cursive;
+}
+.coffeeimage
+{
+  height: 50%;
+}
+
+
+.imgresponsivecoffeeimage
+{
+  max-width: 100%;
+  height: auto;
+}
+
+.login{
+position: absolute;
+top: calc(50% - 75px);
+left: calc(50% - 200px);
+height: auto;
+width: auto;
+padding: 10px;
+z-index: 2;
+}
+
+.login input[type=text], select {
+  width: 150%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.login input[type=password], select {
+  width: 150%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  width: 150%;
+  background-color: #4CAF50;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-weight: bold;
+}
