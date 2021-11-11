@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>REVIEW</title>
+  <link rel="stylesheet" type = "text/css" href="css/temp1.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <style>
+      body {
+          background-image: url('original.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;  
+          background-size: cover;
+          font-family: 'Comic Sans MS', monospace;
+          }
+  </style>
+</head>
+<body>
+
+  <div id="nav-placeholder"></div>
+  <script>
+    $(function () {
+      $("#nav-placeholder").load("MarketPlace_navbar.php");
+    });
+  </script>
+
+</br>
+
+</br>
+
+</br>
+<div class="container">
+<div class="row" style="height: auto;">
+  <div class="col-lg-3 col-md-2 col-sm-1 col-xs-12">    
+  </div>	         
+  <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12">
+	<form name="reviewform" class="reviewform" action="mplreview.php" autocomplete="off" method="POST">
+  <fieldset><legend>Review This Product</legend>
+    <!-- <label for="company"><strong>CHOOSE A COMPANY:</strong></label>
+    <select id="company" name="company">
+    <option value="KOPI-LUWAK" name="KOPI-LUWAK">KOPI-LUWAK</option>
+    <option value="AUTOCAR PRODUCTION" name="AUTOCAR PRODUCTION">AUTOCAR PRODUCTION</option>
+      <option value="DDVV TRAVELS" name="DDVV TRAVELS">DDVV TRAVELS</option>
+      <option value="PHD AUTOMOBILES" name="PHD AUTOMOBILES">PHD AUTOMOBILES</option>
+    </select>
+    <br>
+    <label for="coffee"><strong>CHOOSE A KOPI-LUWAK PRODUCT:</strong></label> -->
+    <select id="products" name="products" class="products">
+      <option disabled selected value> -- KOPI-LUWAK -- </option>
+      <option value="Caffe Misto" name="Caffe Misto">Caffe Misto</option>
+      <option value="Blonde Roast" name="Blonde Roast">Blonde Roast</option>
+      <option value="Cappuccino" name="Cappuccino">Cappuccino</option>
+      <option value="Hot Chocolate" name="Hot Chocolate">Hot Chocolate</option>
+      <option value="White Hot Chocolate" name="White Hot Chocolate">White Hot Chocolate</option>
+      <option value="Caramel Apple Spice" name="Caramel Apple Spice">Caramel Apple Spice</option>
+      <option value="Pistachio Coffee Frappuccino" name="Pistachio Coffee Frappuccino">Pistachio Coffee Frappuccino</option>
+      <option value="Caramel Ribbon Crunch" name="Caramel Ribbon Crunch">Caramel Ribbon Crunch</option>
+      <option value="Mocha Cookie Crumble" name="Mocha Cookie Crumble">Mocha Cookie Crumble</option>
+      <option value="Matcha Creme Frappuccino" name="Matcha Creme Frappuccino">Matcha Crème Frappuccino</option>
+
+    <!-- <label for="car"><strong>CHOOSE A AUTOCAR PRODUCTION PRODUCT:</strong></label>
+    <select id="AUTOCAR PRODUCTION" name="AUTOCAR PRODUCTION" class="AUTOCAR PRODUCTION" style="display:none;">
+      <option label="select">select</option> -->
+      <option disabled selected value> -- AUTOCAR PRODUCTION -- </option>
+      <option value="Tesla Model S" name="Tesla Model S">Tesla Model S</option>
+      <option value="Ford Mustang Mach-E" name="Ford Mustang Mach-E">Ford Mustang Mach-E</option>
+      <option value="Audi E-Tron" name="Audi E-Tron">Audi E-Tron</option>
+      <option value="Porsche Taycan" name="Porsche Taycan">Porsche Taycan</option>
+      <option value="Volkswagen Golf" name="Volkswagen Golf">Volkswagen Golf</option>
+      <option value="Mini Cooper" name="Mini Cooper">Mini Cooper</option>
+      <option value="Hyundai Veloster" name="Hyundai Veloster">Hyundai Veloster</option>
+      <option value="Honda Civic Type R" name="Honda Civic Type R">Honda Civic Type R</option>
+      <option value="Cadillac Escalade" name="Cadillac Escalade">Cadillac Escalade</option>
+      <option value="Mercedes-Benz GLS-Class" name="Mercedes-Benz GLS-Class">Mercedes-Benz GLS-Class</option>
+      <option value="Range Rover Velar" name="Range Rover Velar">Range Rover Velar</option>
+      <option value="BMW X7" name="BMW X7">BMW X7</option>
+      <option value="Ferrari Roma" name="Ferrari Roma">Ferrari Roma</option>
+      <option value="Porsché 911" name="Porsché 911">Porsché 911</option>
+      <option value="Lamborghini Aventador SVJ" name="Lamborghini Aventador SVJ">Lamborghini Aventador SVJ</option>
+      <option value="McLaren 720S" name="McLaren 720S">McLaren 720S</option>
+    <!-- </select> -->
+
+    <!-- <label for="travel"><strong>CHOOSE A DDVV TRAVEL PRODUCT:</strong></label>
+        <select id="DDVV TRAVELS" name="DDVV TRAVELS" class="DDVV TRAVELS" style="display:none;">
+          <option label="select">select</option> -->
+          <option disabled selected value> -- DDVV TRAVELS -- </option>
+      <option value="Amritsar" name="Amritsar">Amritsar</option>
+      <option value="Andaman-Nicobar" name="Andaman-Nicobar">Andaman-Nicobar</option>
+      <option value="Bangalore" name="Bangalore">Bangalore</option>
+      <option value="Chennai" name="Chennai">Chennai</option>
+      <option value="Delhi" name="Delhi">Delhi</option>
+      <option value="Gangtok" name="Gangtok">Gangtok</option>
+      <option value="Jaipur" name="Jaipur">Jaipur</option>
+      <option value="Kolkata" name="Kolkata">Kolkata</option>
+      <option value="Mumbai" name="Mumbai">Mumbai</option>
+      <option value="Panaji" name="Panaji">Panaji</option>
+      <option value="Srinagar" name="Srinagar">Srinagar</option>
+    <!-- </select>
+
+    <label for="book-services"><strong>CHOOSE A PHD AUTOMOBILE SERVICE:</strong></label>
+    <select id="PHD AUTOMOBILES" name="PHD AUTOMOBILES" class="PHD AUTOMOBILES" style="display:none;"> -->
+      <!-- <option label="select">select</option> -->
+      <option disabled selected value> -- PHD AUTOMOBILES -- </option>
+      <option value="ANTIFREEZE ADDED" name="ANTIFREEZE ADDED">ANTIFREEZE ADDED</option>
+      <option value="BATTERY REPLACEMENT" name="BATTERY REPLACEMENT">BATTERY REPLACEMENT</option>
+      <option value="BRAKE WORK" name="BRAKE WORK">BRAKE WORK</option>
+      <option value="CAR WASH" name="CAR WASH">CAR WASH</option>
+      <option value="ENGINE TUNE-UP" name="ENGINE TUNE-UP">ENGINE TUNE-UP</option>
+      <option value="NEW TIRES" name="NEW TIRES">NEW TIRES</option>
+      <option value="OIL FILTER CHANGED" name="OIL FILTER CHANGED">OIL FILTER CHANGED</option>
+      <option value="RELACE AIR FILTER" name="RELACE AIR FILTER">RELACE AIR FILTER</option>
+      <option value="SUSPENSION CHECKS" name="SUSPENSION CHECKS">SUSPENSION CHECKS</option>
+      <option value="SCHEDULED MAINTENANCE" name="SCHEDULED MAINTENANCE">SCHEDULED MAINTENANCE</option>
+      <option value="WHEELS ALIGNED/BALANCED" name="WHEELS ALIGNED/BALANCED">WHEELS ALIGNED/BALANCED</option>
+      <option value="WIPER BLADES REPLACEMENT" name="WIPER BLADES REPLACEMENT">WIPER BLADES REPLACEMENT</option>
+      <br>
+    </select>
+    
+    <p><label for="rating"><strong>RATING</strong></label><br>
+        <input type="radio" class="rating" name="rating"value="5" /> 5 
+      <input type="radio" class="rating" name="rating" value="4" /> 4
+      <input type="radio" class="rating" name="rating" value="3" /> 3 
+      <input type="radio" class="rating" name="rating" value="2" /> 2 
+      <input type="radio" class="rating" name="rating" value="1" /> 1
+    </p>
+    
+    <p><label for="review"><strong>REVIEW</strong></label><br><textarea class="review" name="review" rows="8" cols="40">
+       </textarea>
+    </p>
+    <p><input type="submit" value="Submit Review"></p>
+</fieldset>
+	</form>
+  
+</div>	 
+<div class="col-lg-3 col-md-2 col-sm-1 col-xs-12">
+</div>    
+</div>	 
+</div>	
+</body>
+</html>

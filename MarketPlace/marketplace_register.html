@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>REGISTRATION</title>
+  <link rel="stylesheet" type = "text/css" href="css/temp1.css">
+  <!-- <script src="js/temp.js"></script> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <!DOCTYPE html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <style>
+      body {
+          background-image: url('original.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;  
+          background-size: cover;
+          font-family: 'Comic Sans MS', monospace;
+          }
+  </style>
+  </head>
+  
+  <body>
+    <div id="nav-placeholder"></div>
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("MarketPlace_navbarlogin.php");
+      });
+    </script>
+  
+  </br>
+  
+  </br>
+  
+  </br>
+
+<div class="row" style="height: auto; ">
+  <div class="col-lg-3 col-md-2 col-sm-1 col-xs-12">    
+  </div>	         
+  <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12">
+	<form name="registrationform" class="registrationform" action="marketplace_register.php" autocomplete="off" method="POST">
+		FIRST NAME<br> <input class="fname" type="text" name="fname" style="width:300px" placeholder="First name" required><br><br>
+        LAST NAME<br> <input class="lname" type="text" name="lname" style="width:300px" placeholder="Last name" required><br><br>
+		E-MAIL <br><input class="email" type="email" name="email" placeholder="abc@gmail.com" pattern="^([a-zA-Z0-9_\-\.]+)*@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" style="width:300px" required>
+		</br></br>
+		CONTACT <br><input class="contact" type="text" name="contact" placeholder="Your Mobile No." pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" style="width:300px" required>
+		</br></br>
+        ADDRESS<br><textarea class="addr" type="text" name="address" placeholder="Your Full Address" style="width:300px" required> </textarea>
+		</br></br>
+		USERNAME <br><input class="username" type="text" name="username" placeholder="test123" style="width:300px" required>
+		</br></br>
+		PASSWORD <br><input class="pass" type="Password" placeholder="Create a Strong Password" name="password" style="width:300px" required>
+		</br></br>
+		<input class="submit_reg" style="font-size: 1.5rem;" type="submit" value="SUBMIT" >
+	</form>
+</div>	 
+<div class="col-lg-3 col-md-2 col-sm-1 col-xs-12">
+    
+</div>	 
+</div>	
+</body>
+</html>

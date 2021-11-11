@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <style>
+    body {
+        background-image: url('original.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+        font-family: 'Comic Sans MS', monospace;
+        }
+</style>
+</head>
+
+<body>
+  <div id="nav-placeholder"></div>
+  <script>
+    $(function () {
+      $("#nav-placeholder").load("MarketPlace_navbarlogin.php");
+    });
+  </script>
+
+</br>
+
+</br>
+
+</br>
+<div class="container">
+<div class="row">
+  <!-- <div class="col-1">&nbsp;</div> -->
+  <div class="col-8">
+      <div class="card">
+        <div id="demo" class="carousel slide" data-ride="carousel" style="margin-bottom: 0px !important">
+
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+          </ul>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/kl.jpg" alt="welcome" width="800" height="400">
+              <div class="carousel-caption">
+                <h3></h3>
+                <p></p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/ddvv.jpg" alt="home1" width="800" height="400">
+              <div class="carousel-caption">
+                <h3></h3>
+                <p></p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/ap.jpg" alt="home2" width="800" height="400">
+              <div class="carousel-caption">
+                <h3></h3>
+                <p></p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/home3.jpg" alt="home3" width="800" height="400">
+              <div class="carousel-caption">
+                <h3></h3>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card">
+        <form class="loginform" name="loginform" action="marketplace_login.php" method="POST" autocomplete="off">
+          <div class="username">
+            USERNAME</br><input type="text" name="username" required="required">
+        </div>
+
+        <br>
+        <div class="password">
+          PASSWORD</br><input type="Password" name="password" required="required">
+        </div>
+        </br>
+        <div class="sb">
+      <input class="submit" type="submit" value="SUBMIT" name="submit">
+      <a class="button" href="marketplace_register.html">REGISTER</a>
+    </form>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+</div>
+
+
+
+</html>
